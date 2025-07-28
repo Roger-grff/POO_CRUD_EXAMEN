@@ -1,0 +1,73 @@
+Sistema de Agendamiento de Citas para Mecánica Automotriz
+
+Proyecto académico desarrollado en Java con interfaz gráfica (Swing) y base de datos SQLite para gestionar citas de atención en un taller mecánico.
+
+Estudiantes:
+- Catagña Esteban
+- Chang André
+- Grefa Roger
+- Pérez Alessia
+
+Objetivo:
+Desarrollar una aplicación de escritorio que permita gestionar el agendamiento de citas en una mecánica automotriz, incorporando autenticación con roles y persistencia de datos.
+
+Tecnologías utilizadas:
+- Lenguaje: Java SE 21
+- IDE: IntelliJ IDEA Community Edition
+- GUI: Java Swing
+- Base de datos: SQLite
+- Control de versiones: Git y GitHub
+
+Dependencias externas:
+- sqlite-jdbc-3.27.2.1.jar (Conexión con SQLite)
+- LGoodDatePicker-11.2.1.jar (Selector gráfico de fecha y hora)
+
+Estructura del proyecto:
+src/
+├── App/
+│   ├── Controlador/
+│   ├── Modelo/
+│   ├── Vista/
+│   └── Main.java
+├── base_datos/
+│   └── prog.db
+├── imágenes/
+
+Roles de usuario:
+- Administrador: Crear, modificar, eliminar y visualizar citas.
+- Estándar: Crear y visualizar citas.
+- Invitado: Solo puede visualizar información básica.
+
+Instalación y ejecución:
+1. Clonar el repositorio o descargar el proyecto.
+2. Abrir en IntelliJ IDEA (File > Open).
+3. Añadir las librerías externas (Project Structure > Libraries > +):
+   - sqlite-jdbc-3.27.2.1.jar
+   - LGoodDatePicker-11.2.1.jar
+4. Verificar que prog.db esté en la carpeta base_datos.
+5. Ejecutar Main.java para iniciar la aplicación.
+
+Funcionalidades principales:
+- Inicio de sesión con validación de credenciales.
+- Registro, edición, eliminación y visualización de citas.
+- Control de horarios cruzados.
+- Control de acceso según el rol del usuario.
+
+Ventajas:
+- Interfaz amigable y sencilla.
+- Base de datos local integrada.
+- Validaciones básicas de datos.
+- Separación por capas (modelo, vista, controlador).
+
+Limitaciones:
+- Aplicación solo de escritorio.
+- No funciona en red ni para múltiples usuarios simultáneos.
+
+Futuras mejoras:
+- Versión web o aplicación móvil.
+- Integración con notificaciones.
+- Reportes de citas y estadísticas.
+- Gestión de usuarios desde la interfaz.
+
+Licencia:
+Proyecto desarrollado con fines académicos para la materia de Programación Orientada a Objetos - Período 2025-A.
